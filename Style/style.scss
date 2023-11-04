@@ -1,0 +1,282 @@
+    // color 
+$color-backg:  #FFFFFF;
+$color-link:  #FF4E50;
+$color-onWhite: #666666;
+$color-onCard:  #CCCCCC;
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+        // link with background red
+.redLink{
+    text-decoration: none;
+    background-color: $color-link;
+    color: $color-backg;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 12px 30px; 
+    opacity: 1;
+}
+    // Font
+p{
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+    // Mobile Version
+    //   header  
+header{
+    color: $color-backg;
+    background-image: url(../img/header.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    //  navigation bar
+    nav{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    h1{
+        text-transform: uppercase;
+    }
+    .topLink{
+        padding-top: 40px;
+        padding-bottom: 150px;
+        a{
+            padding: 8px 15px; 
+            text-decoration: none;
+            color: $color-backg;
+            font-weight: bold;
+        }
+        a:hover{
+            border: solid 2px;
+            border-radius: 18px;
+        }
+    }
+    //  Text in the center of the header 
+    section{
+        padding-top: 40px;
+        padding-bottom: 200px;
+        h2{
+            text-transform: uppercase;
+            font-size: 35px;
+        }
+        p{
+            font-weight: lighter;
+            font-size: 24px;
+            padding: 20px 60px 40px 60px;
+        }
+    }
+}
+        // main section
+main{  
+    h3{
+        text-align: center;
+        padding-top: 60px;
+        font-size: 30px;
+        padding-bottom: 40px;
+    }
+    //  <!-- card -->
+    .cardSection{
+        display: flex;
+        flex-direction: column; 
+        padding: 0px 5px;
+        article{
+            background-position: center;
+            background-size: cover;
+            height: 300px;
+            display: flex;
+            flex-direction: column; 
+            justify-content: flex-end;
+            margin: 15px auto;
+            padding: 5px 20px;
+            border-radius: 10px;
+            p, h4{
+                color: $color-backg;
+                padding: 5px 0px;
+            }
+            h4{
+                font-size: 30px;
+            }
+            p{
+                color: $color-onCard;
+                font-size: 20px;
+                text-align: left;
+            }
+            a{
+                margin-right: auto ;
+            }
+        }
+        #card1{
+            background-image: url(../img/step1desk.png);
+        }
+        #card2{
+            background-image: url(../img/step2desk.png);
+        }
+        #card3{
+            background-image: url(../img/step3desk.png);
+        }
+    }
+    
+    // <!-- section for search -->
+
+    .searchSection{
+        padding-top : 20px;
+        padding-bottom: 60px;
+        text-align: center;
+        p{
+            padding: 10px 0px;
+            font-size: 25px;
+        }
+        div{
+            form{
+                input{
+                    text-align: left;
+                    padding: 10px 80px 10px 10px;
+                    border-radius: 5px light;
+                    color: $color-onCard;
+                    margin: 10px 0px;
+                }
+                padding-bottom: 10px;
+                
+            }
+            a{
+                padding: 10px 80px;
+            }
+        }
+    }
+}
+        // Footer
+footer{
+    border-top: $color-link solid 4px;
+    text-align: center;
+    padding-bottom: 20px;
+    h5{
+        font-size: large;
+        font-weight: 700;
+    }
+    div{
+        h5{
+            padding-bottom: 20px;
+        }
+    }
+    #footerTitle{
+        padding: 20px 0px;
+        h1{
+            color: $color-link;
+            text-transform: uppercase;
+            font-size: large;
+            font-weight: bolder;
+        }
+    }
+    ul{
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        gap: 20px;
+        padding: 10px 0px;
+        a{
+            text-decoration: none;
+            color: $color-onWhite;
+        }
+    }
+}
+
+    // Tablet Version
+@media screen and (min-width: 768px){
+    header{
+        //navigation bar
+        nav{
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 40px;
+            padding-bottom: 150px;
+        }
+        .topLink{
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
+         //  Text in the center of the header 
+        section{
+            h2{
+                padding: 0px 150px;
+                font-size: 50px;
+            }
+        }
+    }
+    main{
+        .cardSection{
+            margin: 0px auto;
+            display: flex;
+            flex-direction: row; 
+            width: auto;
+            justify-content: center;
+            article{
+                width: 30%;
+                height: 500px;
+                margin: 0;
+            }
+            #card2{
+                margin: 0px 15px;
+            }
+        }
+        .searchSection{
+            p{
+                padding: 30px 0px;
+            }
+            #bottomMain{
+
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                form{
+                    input{
+                        margin-top: 5px;
+                    }
+                }
+                div{
+                    padding-top: 20px;
+                    a{
+                        padding: 12px 40px; 
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        padding: 50px 40px 100px 40px;
+        display: flex;
+        justify-content: space-between;
+        ul{
+            display: block;
+            li{
+                padding: 5px 0px;
+            }
+        }
+    }
+}
+     // Desktop Version
+@media screen and (min-width: 940px){
+    header{
+        nav{
+            padding-left: 14%;
+            padding-right: 14%;
+        }
+    }
+    main{
+        .cardSection{
+            width: auto;
+            display: flex;
+            justify-content: center;
+            padding-left: 14%;
+            padding-right: 14%;
+        }  
+    }
+    footer{
+        padding-left: 14%;
+        padding-right: 14%;
+    }
+}

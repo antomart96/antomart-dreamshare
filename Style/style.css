@@ -1,0 +1,244 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.redLink {
+  text-decoration: none;
+  background-color: #FF4E50;
+  color: #FFFFFF;
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 12px 30px;
+  opacity: 1;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  color: #FFFFFF;
+  background-image: url(../img/header.png);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+header nav {
+  display: flex;
+  flex-direction: column-reverse;
+}
+header h1 {
+  text-transform: uppercase;
+}
+header .topLink {
+  padding-top: 40px;
+  padding-bottom: 150px;
+}
+header .topLink a {
+  padding: 8px 15px;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+header .topLink a:hover {
+  border: solid 2px;
+  border-radius: 18px;
+}
+header section {
+  padding-top: 40px;
+  padding-bottom: 200px;
+}
+header section h2 {
+  text-transform: uppercase;
+  font-size: 35px;
+}
+header section p {
+  font-weight: lighter;
+  font-size: 24px;
+  padding: 20px 60px 40px 60px;
+}
+
+main h3 {
+  text-align: center;
+  padding-top: 60px;
+  font-size: 30px;
+  padding-bottom: 40px;
+}
+main .cardSection {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 5px;
+}
+main .cardSection article {
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 15px auto;
+  padding: 5px 20px;
+  border-radius: 10px;
+}
+main .cardSection article p, main .cardSection article h4 {
+  color: #FFFFFF;
+  padding: 5px 0px;
+}
+main .cardSection article h4 {
+  font-size: 30px;
+}
+main .cardSection article p {
+  color: #CCCCCC;
+  font-size: 20px;
+  text-align: left;
+}
+main .cardSection article a {
+  margin-right: auto;
+}
+main .cardSection #card1 {
+  background-image: url(../img/step1desk.png);
+}
+main .cardSection #card2 {
+  background-image: url(../img/step2desk.png);
+}
+main .cardSection #card3 {
+  background-image: url(../img/step3desk.png);
+}
+main .searchSection {
+  padding-top: 20px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+main .searchSection p {
+  padding: 10px 0px;
+  font-size: 25px;
+}
+main .searchSection div form {
+  padding-bottom: 10px;
+}
+main .searchSection div form input {
+  text-align: left;
+  padding: 10px 80px 10px 10px;
+  border-radius: 5px light;
+  color: #CCCCCC;
+  margin: 10px 0px;
+}
+main .searchSection div a {
+  padding: 10px 80px;
+}
+
+footer {
+  border-top: #FF4E50 solid 4px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+footer h5 {
+  font-size: large;
+  font-weight: 700;
+}
+footer div h5 {
+  padding-bottom: 20px;
+}
+footer #footerTitle {
+  padding: 20px 0px;
+}
+footer #footerTitle h1 {
+  color: #FF4E50;
+  text-transform: uppercase;
+  font-size: large;
+  font-weight: bolder;
+}
+footer ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 0px;
+}
+footer ul a {
+  text-decoration: none;
+  color: #666666;
+}
+
+@media screen and (min-width: 768px) {
+  header nav {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px;
+    padding-bottom: 150px;
+  }
+  header .topLink {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  header section h2 {
+    padding: 0px 150px;
+    font-size: 50px;
+  }
+  main .cardSection {
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    justify-content: center;
+  }
+  main .cardSection article {
+    width: 30%;
+    height: 500px;
+    margin: 0;
+  }
+  main .cardSection #card2 {
+    margin: 0px 15px;
+  }
+  main .searchSection p {
+    padding: 30px 0px;
+  }
+  main .searchSection #bottomMain {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  main .searchSection #bottomMain form input {
+    margin-top: 5px;
+  }
+  main .searchSection #bottomMain div {
+    padding-top: 20px;
+  }
+  main .searchSection #bottomMain div a {
+    padding: 12px 40px;
+  }
+  footer {
+    padding: 50px 40px 100px 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+  footer ul {
+    display: block;
+  }
+  footer ul li {
+    padding: 5px 0px;
+  }
+}
+@media screen and (min-width: 940px) {
+  header nav {
+    padding-left: 14%;
+    padding-right: 14%;
+  }
+  main .cardSection {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    padding-left: 14%;
+    padding-right: 14%;
+  }
+  footer {
+    padding-left: 14%;
+    padding-right: 14%;
+  }
+}/*# sourceMappingURL=style.css.map */
